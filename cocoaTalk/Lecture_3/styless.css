@@ -1,0 +1,13 @@
+body{
+    height: 1000vh;
+    margin: 20px;
+}
+
+button:active{
+    background-color: tomato;
+}
+
+button:hover{
+    background-color: blue;
+}
+

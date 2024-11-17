@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Lecture_Transitions</title>
+  </head>
+  <style>
+    a {
+      color: wheat;
+      background-color: tomato;
+      text-decoration: none;
+      padding: 5px 5px;
+      border-radius: 5px;
+      font-size: 50px;
+      transition: background-color 100ms ease-in-out, color 1s ease-in-out;
+    }
+    a:hover {
+      color: tomato;
+      background-color: wheat;
+      border-radius: 15px;
+    }
+  </style>
+  <body>
+    <a href="#">Go home</a>
+  </body>
+</html>
+
+<!--
+    Trasition은 기본적으로 어떤 상태에서 다른 상태로의 "변화"를 애니메이션으로
+    그냥 하면, 상태로부터의 상태가 아주 급작스럽다.
+
+    transition: background-color 100ms ease-in-out;
+    transition: all 5s ease-in-out;
+
+-->

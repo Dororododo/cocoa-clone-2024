@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Media Queris</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    div {
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (min-width: 600px) {
+      div {
+        background-color: tomato;
+      }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 700px) and (orientation: portrait) {
+      div {
+        background-color: wheat;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      div {
+        background-color: red;
+      }
+    }
+    @media screen and (orientation: landscape) {
+      span {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div></div>
+    <span>plz flip your phone</span>
+  </body>
+</html>
+
+<!--
+  Media Queris
+  오직 CSS만을 이용해서 스크린의 사이즈를 알 수 있다.
+  가끔 CSS스타일 바꾸고 싶다
+  가로모드, 다른 화면...
+  핸드폰이나 가로모드 사이즈가 이 정도 크기면, CSS를 이렇게 보여줘
+  
+@media screen and (min-width: 650px) and (max-width: 750px) {
+    div {
+        background-color: tomato;
+    }
+}
+ @media 코드의 조건이 참이면 아래 블록을 실행시켜라.
+ and 를 써서 연결할 수 있다. 
+ orientation도 활용가능 (landscape, portrait)
+ min-device-width/max-device-width
+
+  -->

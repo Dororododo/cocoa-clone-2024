@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Animation 1</title>
+  </head>
+  <style>
+    @keyframes sexBaby {
+      from {
+        transform: rotateX(0deg) translateX(100px);
+      }
+      to {
+        transform: rotateX(360deg) translateX(100px);
+      }
+    }
+    img {
+      border: 1px solid black;
+      border-radius: 5%;
+      animation: sexBaby 5s ease-in-out infinite;
+    }
+  </style>
+  <body>
+    <img src="C:\Users\dhkim\Documents\cocoaTalk\KDH_SIGN.png" />
+  </body>
+</html>
+
+<!--
+  @keyframes sexBaby {
+      from {
+        transform: rotateX(0deg);
+      }
+      to {
+        transform: rotateX(360deg);
+      }
+    }
+    img {
+      border: 1px solid black;
+      border-radius: 5%;
+      animation: sexBaby 5s ease-in-out;
+    }
+
+
+-->
